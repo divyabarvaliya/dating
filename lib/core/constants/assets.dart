@@ -1,0 +1,46 @@
+class ImagesAsset {
+  static const String images = 'assets/images';
+  static const String wAdd = '$images/w_add.png';
+  static const String bc_1 = '$images/bc_1.jpg';
+  static const String bc_2 = '$images/bc_2.jpg';
+  static const String call = '$images/call.png';
+  static const String google = '$images/google.png';
+  static const String notification = '$images/notification.png';
+  static const String p_1 = '$images/p_1.png';
+  static const String p_2 = '$images/p_2.jpg';
+  static const String p_3 = '$images/p_3.png';
+  static const String p_4 = '$images/p_4.jpg';
+  static const String p_5 = '$images/p_5.jpg';
+  static const String p_6 = '$images/p_6.png';
+  static const String like = '$images/Like.png';
+  static const String more = '$images/More.png';
+  static const String comment = '$images/Comment.png';
+  static const String bottomNev = '$images/bottom_nav.png';
+  static const String setting = '$images/setting.png';
+  static const String search = '$images/search.png';
+  static const String dis1 = '$images/dis_1.jpg';
+  static const String dis2 = '$images/dis_2.jpg';
+  static const String dis3 = '$images/dis_3.jpg';
+  static const String dis4 = '$images/dis_4.jpg';
+  static const String backIc = '$images/back_ic.png';
+  static const String heart = '$images/heart.png';
+  static const String m1 = '$images/m_1.jpg';
+  static const String m2 = '$images/m_2.jpg';
+  static const String m3 = '$images/m_3.jpg';
+  static const String m4 = '$images/m_4.jpg';
+  static const String m5 = '$images/m_5.jpg';
+  //This is a map image you replace with the google_maps_flutter package
+  static const String map = '$images/Map.png';
+  static const String location = '$images/location.png';
+  static const String down = '$images/down.png';
+  //bottom nev icon
+  static const String home = '$images/home.png';
+  static const String wHome = '$images/w_home.png';
+  static const String discover = '$images/discover.png';
+  static const String wDiscover = '$images/w_discover.png';
+  static const String add = '$images/add.png';
+  static const String frDs = '$images/frds.png';
+  static const String wFrDs = '$images/w_frds.png';
+  static const String chat = '$images/chat.png';
+  static const String wChat = '$images/w_chat.png';
+}
