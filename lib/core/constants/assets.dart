@@ -29,6 +29,16 @@ class ImagesAsset {
   static const String m3 = '$images/m_3.jpg';
   static const String m4 = '$images/m_4.jpg';
   static const String m5 = '$images/m_5.jpg';
+  static const String close = '$images/close.png';
+  static const String fev = '$images/fev.png';
+  static const String send = '$images/send.png';
+  static const String o = '$images/(O).png';
+  static const String bottomShape = '$images/bottom_shape.png';
+  static const String keyboard = '$images/keyboard.png';
+  static const String mic = '$images/mic.png';
+  static const String pin = '$images/pin.png';
+  static const String read = '$images/read.png';
+  static const String splash = '$images/splash.png';
   //This is a map image you replace with the google_maps_flutter package
   static const String map = '$images/Map.png';
   static const String location = '$images/location.png';

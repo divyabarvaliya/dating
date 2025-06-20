@@ -1,5 +1,5 @@
 import 'package:dating/core/controller/main_controller.dart';
-import 'package:dating/screens/dashboard_screen.dart';
+import 'package:dating/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
       ),
-      home: DashboardScreen(),
+      home: SplashScreen(),
     );
   }
 }

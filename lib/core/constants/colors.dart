@@ -9,7 +9,7 @@ class AppColors {
 
   static const MaterialColor greyScale = MaterialColor(0xFFEAE9E8, <int, Color>{
     10: Color(0xFFC4C4C4),
-    20: Color(0xff8E8E8E),
+    20: Color(0xffE5E6EB),
   });
   // static Gradient linearGradient = LinearGradient(
   //   colors: [lightOrange, orange], // Start → End colors

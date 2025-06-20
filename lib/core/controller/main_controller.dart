@@ -2,6 +2,7 @@ import 'package:dating/core/constants/assets.dart';
 import 'package:dating/core/model/friends_model.dart';
 import 'package:dating/core/model/interest_model.dart';
 import 'package:dating/core/model/make_frd_model.dart';
+import 'package:dating/core/model/messages_model.dart';
 import 'package:dating/core/model/people_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -93,12 +94,19 @@ class MainController extends GetxController {
       ].obs;
   RxList<InterestModel> interest =
       [
-        InterestModel(title: '⚽️ Football'),
+        InterestModel(title: '⚽️Football'),
         InterestModel(title: '🍃Nature'),
         InterestModel(title: '🗣Language'),
         InterestModel(title: '📸Photography'),
         InterestModel(title: '🎵Music'),
         InterestModel(title: '✍️Writing'),
+      ].obs;
+  RxList<InterestModel> peoIn =
+      [
+        InterestModel(title: '🍃Nature'),
+        InterestModel(title: '🏝Travel'),
+        InterestModel(title: '✍️Writing'),
+        InterestModel(title: '🙂People'),
       ].obs;
   RxList<String> iconList =
       [
@@ -132,14 +140,6 @@ class MainController extends GetxController {
       des: 'If you could live anywhere in the world, where would you pick?',
     ),
   ];
-
-  // List<String> newArrival = <String>[
-  //   ImagesAsset.men1,
-  //   ImagesAsset.men2,
-  //   ImagesAsset.men3,
-  //   ImagesAsset.intro2,
-  //   ImagesAsset.intro3,
-  // ];
   List<PeopleModel> discoverM = [
     PeopleModel(
       name: 'Halima',
@@ -181,5 +181,65 @@ class MainController extends GetxController {
   ];
   RxList<String> sizes = ['S', 'M', 'L', 'XL'].obs;
 
+  List<String> recentMatches = [
+    ImagesAsset.dis3,
+    ImagesAsset.m2,
+    ImagesAsset.m3,
+    ImagesAsset.m4,
+    ImagesAsset.p_1,
+    ImagesAsset.p_2,
+    ImagesAsset.p_3,
+  ];
+  List<MessagesModel> chats = <MessagesModel>[
+    MessagesModel(
+      profile: ImagesAsset.m3,
+      name: 'Alfredo Calzoni',
+      dec: 'What about that new jacket if I ...',
+      time: '09:18',
+      isOnline: true,
+    ),
+    MessagesModel(
+      profile: ImagesAsset.p_3,
+      name: 'Clara Hazel',
+      dec: 'I know right 😉',
+      time: '12:44',
+      isOnline: true,
+    ),
+    MessagesModel(
+      profile: ImagesAsset.m2,
+      name: 'Brandon Aminoff',
+      dec: 'I’ve already registered, can’t wai...',
+      time: '08:06',
+      isOnline: true,
+    ),
+    MessagesModel(
+      profile: ImagesAsset.p_2,
+      name: 'Amina Mina',
+      dec: 'It will have two lines of heading ...',
+      time: '09:32',
+      isOnline: false,
+    ),
+    MessagesModel(
+      profile: ImagesAsset.dis2,
+      name: 'Zara Khan',
+      dec: 'Excited to share the new project update...',
+      time: '08:45',
+      isOnline: false,
+    ),
+    MessagesModel(
+      profile: ImagesAsset.p_6,
+      name: 'Noor Fatima',
+      dec: 'Working on the final design today...',
+      time: '07:58',
+      isOnline: false,
+    ),
+    MessagesModel(
+      profile: ImagesAsset.dis4,
+      name: 'Sara Ali',
+      dec: 'Meeting postponed to tomorrow morning.',
+      time: '11:20',
+      isOnline: false,
+    ),
+  ];
   RxInt selSize = 2.obs;
 }

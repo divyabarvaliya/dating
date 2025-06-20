@@ -2,6 +2,7 @@ import 'package:dating/core/controller/main_controller.dart';
 import 'package:dating/screens/discover_screen.dart';
 import 'package:dating/screens/home_screen.dart';
 import 'package:dating/screens/matches_screen.dart';
+import 'package:dating/screens/messages_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -22,8 +23,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
       body: Stack(
         children: [
           Obx(() => pageView()),
-          Obx(()=>
-           AnimatedPositioned(
+          Obx(
+            () => AnimatedPositioned(
               left: 0,
               right: 0,
               duration: Duration(milliseconds: 700),
@@ -44,6 +45,14 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(40),
+                  boxShadow: [
+                    BoxShadow(
+                      color: AppColors.primary.withAlpha(20), // Shadow color
+                      spreadRadius: 6, // How much it spreads
+                      blurRadius: 10, // How soft the shadow is
+                      offset: Offset(2, 2), // Horizontal and vertical offset
+                    ),
+                  ],
                   // image: DecorationImage(
                   //   image: AssetImage(ImagesAsset.bottomBac),
                   //   fit: BoxFit.fill,
@@ -70,7 +79,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.symmetric(horizontal: Dimens.s_25()),
+                        padding: EdgeInsets.symmetric(
+                          horizontal: Dimens.s_25(),
+                        ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: List.generate(
@@ -122,7 +133,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
       case 3:
         return MatchesScreen();
       case 4:
-        return HomeScreen();
+        return MessagesScreen();
       default:
         return HomeScreen();
     }
