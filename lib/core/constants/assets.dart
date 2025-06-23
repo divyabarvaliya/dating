@@ -39,8 +39,6 @@ class ImagesAsset {
   static const String pin = '$images/pin.png';
   static const String read = '$images/read.png';
   static const String splash = '$images/splash.png';
-  //This is a map image you replace with the google_maps_flutter package
-  static const String map = '$images/Map.png';
   static const String location = '$images/location.png';
   static const String down = '$images/down.png';
   //bottom nev icon

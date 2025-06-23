@@ -78,10 +78,15 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
             ),
           ),
           SizedBox(height: Dimens.verticalBlockSize * 2.5),
-          Image.asset(ImagesAsset.map),
+          //Create map view with the google_maps_flutter package
+          _peopleMap(),
         ],
       ),
     );
+  }
+
+  Widget _peopleMap() {
+    return Container();
   }
 
   Widget _interest() {
